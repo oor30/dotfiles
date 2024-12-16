@@ -1,0 +1,45 @@
+# AtCoder-CLI 提出コマンド
+alias accs="acc s main.py -- --guess-python-interpreter pypy"
+
+# docker compose
+alias dcc='docker compose'
+
+# Laravel Sail
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
+# Python venvアクティベートコマンド
+alias activate='source venv/bin/activate'
+
+# Linuxコマンド
+# man ls で色の設定を確認できる
+export LSCOLORS=GxFxCxDxBxgedabagaced
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls -G'    # macOS
+# alias ls='ls --color=auto'   # Linux
+
+# grepコマンド
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# 参考: https://github.com/mathiasbynens/dotfiles/blob/main/.aliases
+# シェルの再起動
+alias reload="exec ${SHELL} -l"
+
+# パスを改行して表示
+alias path='echo -e ${PATH//:/\\n}'
+
+# ディレクトリ移動
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+alias w="cd ~/workspace"
+alias repo="cd ~/workspace/ITreat/repo"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dc="cd ~/Documents"
