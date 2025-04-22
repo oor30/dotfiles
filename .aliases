@@ -4,6 +4,8 @@ alias accs="acc s main.py -- --guess-python-interpreter pypy"
 # docker compose
 alias dcc='docker compose'
 
+# Laravel artisan
+alias art='php artisan'
 # Laravel Sail
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
