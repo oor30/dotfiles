@@ -43,6 +43,9 @@ export PATH="/Users/kazuki/.local/bin:$PATH"
 # ----- GO -----
 export PATH="$HOME/go/bin:$PATH"
 
+# ----- Gurobi -----
+export GUROBI_HOME="/Library/gurobi1201/macos_universal2"
+
 # ----- エイリアス ------
 source ~/.aliases
 
